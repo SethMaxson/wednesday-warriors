@@ -16,7 +16,7 @@ import LinksViewComponent from "./components/views/links/Links.vue";
 // createApp(App).mount("#app");
 
 const router = createRouter({
-	history: createWebHistory(),
+	history: createWebHistory('/wednesday-warriors/'),
 	routes:[
 		{ path: '/', component: CharactersVue},
 		{ path: '/about', component: CharactersVue},
