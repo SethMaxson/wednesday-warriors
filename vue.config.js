@@ -1,5 +1,5 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-    ? '/wednesday-warriors/'
+    ? '/https://sethmaxson.github.io/wednesday-warriors/'
     : '/',
   }
