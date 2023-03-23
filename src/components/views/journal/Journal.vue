@@ -15,7 +15,7 @@ import Character from "@/components/core/text-tags/Character.vue";
 	</header>
 	<main>
 		<div class="container border border-2 g-0">
-			<JournalLabels session="Session #" name="Name" party="Party Members" date="Date" class="bg-info fw-bold" />
+			<JournalLabels session="Session #" name="Name" party="Party Members" date="Date" class="bg-info fw-bold d-none d-md-flex" />
 			<JournalEntry :session=1 name="Fizzy Lifting Drink" date="04/20/2022" party="Guidos, Murica, Peppa Shortbottom">
 				A trio of adventurers were locked within the brig of an airship prisoner transport when the vessel was suddenly attacked by pirates. A stray piece of shrapnel destroyed the lock to their cell. The prisoners seized upon this opportunity, narrowly escaping by feeding an Anti Gravity Crystal to an ogrillon and using their new friend as a makeshift airship until they could make landfall.
 			</JournalEntry>
