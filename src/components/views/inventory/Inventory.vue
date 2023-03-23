@@ -19,7 +19,7 @@ import EquipmentSubscreen from "./components/EquipmentSubscreen.vue";
 </template>
 
 <style>
-#app {
+/* #app {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
@@ -30,7 +30,7 @@ import EquipmentSubscreen from "./components/EquipmentSubscreen.vue";
 #app > .container {
 	overflow: auto;
 	flex: 2 2 80%;
-}
+} */
 </style>
 
 <style scoped>

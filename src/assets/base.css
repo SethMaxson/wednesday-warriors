@@ -48,15 +48,22 @@
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
   }
-}
+} */
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   position: relative;
   font-weight: normal;
+} */
+
+/* color variables for this campaign-specific project */
+:root {
+  --character-text-color: #031e94;
+  --item-text-color: #94030f;
+  --location-text-color: #039422;
 }
 
 body {
@@ -71,4 +78,4 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} */
+}

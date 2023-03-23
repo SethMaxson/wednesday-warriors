@@ -7,6 +7,7 @@ import "bootstrap";
 
 import "./assets/main.css";
 import CharactersVue from "./components/views/characters/Characters.vue";
+import DMViewComponent from "./components/views/dm/DM.vue";
 import FactionsViewComponent from "./components/views/factions/Factions.vue";
 import InventoryViewComponent from "./components/views/inventory/Inventory.vue";
 import JournalViewComponent from "./components/views/journal/Journal.vue";
@@ -20,6 +21,7 @@ const router = createRouter({
 		{ path: '/', component: CharactersVue},
 		{ path: '/about', component: CharactersVue},
 		{ path: '/characters', component: CharactersVue},
+		{ path: '/dm', component: DMViewComponent},
 		{ path: '/factions', component: FactionsViewComponent},
 		{ path: '/inventory', component: InventoryViewComponent},
 		{ path: '/journal', component: JournalViewComponent},

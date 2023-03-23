@@ -24,7 +24,7 @@ defineProps({
 
 <template>
 	<JournalLabels :session="session" :name="name" :party="party" :date="date" class="bg-light" />
-	<div class="row m-0 p-2">
+	<div class="m-0 p-2 border-bottom border-3 border-info">
 		<slot></slot>
 	</div>
 </template>

@@ -2,6 +2,9 @@
 import ViewBlurb from "../../core/ViewBlurb.vue";
 import JournalLabels from "./subviews/JournalLabels.vue";
 import JournalEntry from "./subviews/JournalEntry.vue";
+import Location from "@/components/core/text-tags/Location.vue";
+import Important from "@/components/core/text-tags/Important.vue";
+import Character from "@/components/core/text-tags/Character.vue";
 </script>
 
 <template>
@@ -11,7 +14,7 @@ import JournalEntry from "./subviews/JournalEntry.vue";
 		</ViewBlurb>
 	</header>
 	<main>
-		<div class="container border g-0">
+		<div class="container border border-2 g-0">
 			<JournalLabels session="Session #" name="Name" party="Party Members" date="Date" class="bg-info fw-bold" />
 			<JournalEntry :session=1 name="Fizzy Lifting Drink" date="04/20/2022" party="Guidos, Murica, Peppa Shortbottom">
 				A trio of adventurers were locked within the brig of an airship prisoner transport when the vessel was suddenly attacked by pirates. A stray piece of shrapnel destroyed the lock to their cell. The prisoners seized upon this opportunity, narrowly escaping by feeding an Anti Gravity Crystal to an ogrillon and using their new friend as a makeshift airship until they could make landfall.
@@ -35,19 +38,18 @@ import JournalEntry from "./subviews/JournalEntry.vue";
 				The gang began their exploration of the ancient catacombs on the remote island. Floopy found and donned an obviously cursed mask, which immediately fused to his face.
 			</JournalEntry>
 			<JournalEntry :session=8 name="Silly Rabbit, Trix are for Ancient Catacombs" date="06/23/2022" party="Floopy, Guidos, Murica">
-				The gang discovered the legendary 'treasure' of GreedBeard: the GreedBurger secret formula. They made a final search of the catacombs, and stumbled onto a hidden, secret wing that housed occult imagery. Floopy managed to trigger a prophetic vision of cultists performing a ritual to summon an eldritch being known as Fwloaiolok, or 'The First Hunger.'
+				The gang discovered the legendary 'treasure' of GreedBeard: the <Important>GreedBurger secret formula</Important>. They made a final search of the catacombs, and stumbled onto a hidden, secret wing that housed occult imagery. Floopy managed to trigger a prophetic vision of cultists performing a ritual to summon an eldritch being known as <Important>Fwloaiolok</Important>, or '<Important>The First Hunger</Important>.'
 			</JournalEntry>
 			<JournalEntry :session=9 name="Windfall" date="07/12/2022" party="Floopy, Guidos, Murica">
-				The gang sailed back to the mainland of Lagos, making a pit stop in The Essentials along the way. Floopy and Guidos made Blood Oaths with Ssssimon in exchange for magic items they could not otherwise afford. On the final leg of their return voyage, they crashed a mysterious gala hosted by a wealthy duchess on a large, luxury airship. They discovered the gala to be a birthday party for the duchess' violent talking doberman, Mr. Smoochums, who had been locked below decks after trying to eat party-goers' femurs. Floopy set the dog free, causing no small amount of chaos aboard the yacht. The party escaped before consequences could find them, but lost Teddy in the shuffle.
-			</JournalEntry>
-			<JournalEntry :session=9 name="Windfall" date="07/12/2022" party="Floopy, Guidos, Murica">
-				The party set a course for Lagos after successfully clearing GreedBeard's Final Resing Place. The party made some Blood Oaths with Ssssimon in exchange for magic items. During their voyage back to Lagos, the party crashed a dog's birthday party, where they abandoned Teddy.
+				The gang sailed back to the mainland of <Location>Lagos</Location>, making a pit stop in <Location>The Essentials</Location> along the way. Floopy and Guidos made <Important>Blood Oaths</Important> with <Character>Ssssimon</Character> in exchange for magic items they could not otherwise afford. On the final leg of their return voyage, they crashed a <Important>mysterious gala</Important> hosted by a wealthy duchess on a large, luxury airship. They discovered the gala to be a birthday party for the duchess' violent talking doberman, <Character>Mr. Smoochums</Character>, who had been locked below decks after trying to eat party-goers' femurs. Floopy set the dog free, causing no small amount of chaos aboard the yacht. The party escaped before consequences could find them, but lost <Character>Teddy</Character> in the shuffle.
 			</JournalEntry>
 			<JournalEntry :session=10 name="Warmth for Orphans" date="07/21/2022" party="Floopy, Guidos, Murica">
-				Summary
+				<p>The gang set about fulfilling Floopy and Guidos' <Important>Blood Oaths</Important> to <Character>Ssssimon</Character>, beginning with Guidos' pact to burn down a building in the city of <Location>Brassington</Location> inhabited by one of Ssssimon's previous clients who defaulted on their payments. On their journey, the party rescued a young ratfolk named <Character>Harbisoni Bocagi</Character> from bandits and convinced him to sail with them. The gang entered the city and learned that the building in question was an orphanage. Undeterred, they evacuated the orphans and staff before razing the building to the ground. Guards immediately began to swarm the burning orphanage, creating a window of opportunity that Guidos seized to seal an orphan's soul inside a <Important>Soul Card</Important>. The gang narrowly escaped the town guard during the ensuing chaos, after which they promptly set a course to fulfil Floopy's oath.</p>
+
+				<p>During their journey, the party observed a camel falling through a Rift. They worked together to rescue the camel, which they named 'Giraffe,' and sealed it in one of Guidos' <Important>Soul Cards</Important>. Afterwards, the gang arrived safely outside the city of <Location>Emerald's Edge</Location>. Once inside the city, the gang set to work on kidnapping a noble's daughter as instructed by Ssssimon. They managed to infiltrate the palace, but were surprised to find that an empty void existed where their target's bedroom should have been. They fled the city and regrouped at their airship to formulate a new plan.</p>
 			</JournalEntry>
 			<JournalEntry :session=11 name="A Tangled Yarn" date="08/03/2022" party="Dilbert, Floopy, Guidos, Murica">
-				Summary
+				The gang crash-landed in the <Location>Scorchwind Desert</Location> after their airship was severely damaged by forces from <Location>Emerald's Edge</Location>. Luckily, they discovered the small town of <Location>Goldman's Gulch</Location> nearby. It was here that they met <Character>Dilbert the Incontinent</Character>, a down-on-his-luck paladin. Floopy, Guidos, and Murica felt sympathy for the downtrodden Dilbert, and took him on a shopping spree at <Location>The Essentials</Location>, where they acquired an <Important>Accursed Anchor Earring</Important> among other things. The gang invited their new acquaintance to join their crew. During this time, Floopy's mask began to show him <Important>visions of an ancient land</Important> far to the west. Dilbert used the earring to become a temporary airship, and the party charted a course for the <Location>fallen kingdom of Edolador</Location> to investigate Floopy's visions.
 			</JournalEntry>
 			<JournalEntry :session=12 name="Welcome to the Jungle" date="08/10/2022" party="Dilbert, Floopy, Guidos, Murica">
 				Summary

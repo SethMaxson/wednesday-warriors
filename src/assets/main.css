@@ -26,6 +26,12 @@ a,
   z-index: 6;
 }
 
+/*#region text-tag formatting */
+.character { color: var(--character-text-color); }
+.important { color: var(--item-text-color); }
+.location { color: var(--location-text-color); }
+/*#endregion text-tag formatting */
+
 /* @media (min-width: 1024px) {
   body {
     display: flex;

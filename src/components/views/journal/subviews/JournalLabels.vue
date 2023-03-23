@@ -25,17 +25,17 @@ defineProps({
 </script>
 
 <template>
-	<div class="row align-items-start border-bottom w-100 m-0" :class="class">
-		<div class="col-1 border-end">
+	<div class="row border-bottom border-2 m-0" :class="class">
+		<div class="col-1 border-end border-2 text-end">
 			{{session}}
 		</div>
-		<div class="col border-end">
+		<div class="col border-end border-2">
 			{{name}}
 		</div>
-		<div class="col border-end">
+		<div class="col border-end border-2 d-none d-md-block">
 			{{party}}
 		</div>
-		<div class="col">
+		<div class="col text">
 			{{date}}
 		</div>
 	</div>
