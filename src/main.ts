@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import {createRouter, createWebHistory} from 'vue-router'
+import {createRouter, createWebHashHistory, createWebHistory} from 'vue-router'
 
 import App from "./App.vue";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,7 +16,7 @@ import LinksViewComponent from "./components/views/links/Links.vue";
 // createApp(App).mount("#app");
 
 const router = createRouter({
-	history: createWebHistory('/wednesday-warriors/'),
+	history: createWebHashHistory('/wednesday-warriors/'),
 	routes:[
 		{ path: '/', component: CharactersVue},
 		{ path: '/about', component: CharactersVue},
@@ -29,8 +29,8 @@ const router = createRouter({
 		{ path: '/home', component: CharactersVue}]
 });
 
-const app= createApp(App)
+const app= createApp(App);
 
-app.use(router)
+app.use(router);
 
-app.mount('#app')
+app.mount('#app');
