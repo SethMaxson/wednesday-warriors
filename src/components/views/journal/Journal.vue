@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ViewBlurb from "../../core/ViewBlurb.vue";
+import ViewBlurb from "@/components/core/ViewBlurb.vue";
 import JournalLabels from "./subviews/JournalLabels.vue";
 import JournalEntry from "./subviews/JournalEntry.vue";
 import Location from "@/components/core/text-tags/Location.vue";
@@ -52,16 +52,27 @@ import Character from "@/components/core/text-tags/Character.vue";
 				The gang crash-landed in the <Location>Scorchwind Desert</Location> after their airship was severely damaged by forces from <Location>Emerald's Edge</Location>. Luckily, they discovered the small town of <Location>Goldman's Gulch</Location> nearby. It was here that they met <Character>Dilbert the Incontinent</Character>, a down-on-his-luck paladin. Floopy, Guidos, and Murica felt sympathy for the downtrodden Dilbert, and took him on a shopping spree at <Location>The Essentials</Location>, where they acquired an <Important>Accursed Anchor Earring</Important> among other things. The gang invited their new acquaintance to join their crew. During this time, Floopy's mask began to show him <Important>visions of an ancient land</Important> far to the west. Dilbert used the earring to become a temporary airship, and the party charted a course for the <Location>fallen kingdom of Edolador</Location> to investigate Floopy's visions.
 			</JournalEntry>
 			<JournalEntry :session=12 name="Welcome to the Jungle" date="08/10/2022" party="Dilbert, Floopy, Guidos, Murica">
-				Summary
+				<p>
+					The gang continued to sail towards the western continent of <Location>Paros</Location>, and Murica used her <Important>teleglyph</Important> to contact <Character>Kenji Cherrymoon</Character> and ask him to collect their airship <Important>The Damp Shark</Important> and meet them on their journey. Due to The Damp Shark's speed advantage over Dilbert as an airship, Kenji caught up just a few days later. He left The Damp Shark and the volunteer crew he had assembled in the care of the gang before leaving. 
+				</p>
+				<p>
+					Several days of uneventful travel followed before the gang encountered the <Important>Sweet Child O' Brine</Important>, the official airship of <Character>Crossbows N' Daffodils</Character>, en route to Paros. The party stopped and mingled with Crossbows N' Daffodils for a while, and learned that they were headed to Paros to seek work in the growing conflict between the nation of <Location>Cian</Location> and the draconic warlord <Character>Bhazikth</Character>. They parted ways peacefully. 
+				</p>
+				<p>
+					A few more days of calm winds and safe travels brought the gang to the coast of Paros, though they decided to sail farther inland before beginning their investigation. During the night, Floopy was visited in a dream by the entity known as <Character>Clubfoot</Character>, who charged Floopy with saying the word 'ribbit' in casual conversation at least 5 times the next day.
+				</p>
+				<p>
+					The following day the gang began their investigation in <Location>Goldthrone</Location>, the Cianish capital city. They met an eccentric elderly dwarf named <Character>Flint Kevanarial</Character>, who Dilbert hired to join the crew. The gang encountered an erratic, muttering deep gnome and his imposing bodyguard while exploring the city's main street. The gang decided to ignore the murderously insane aura exuded by the gnome and approach him to strike up a conversation. The conversation quickly turned to talk of torture instruments, and the party managed to leave a positive impression on their new acquaintance by suggesting putting bees up someone's nose in their sleep as an unconventional method of inflicting suffering. It was only after parting ways that the gang realized that the gnome was <Character>Forryn Glim</Character>, an infamous mad scientist who had recently been headhunted to become <Important>one of Bhazikth's lieutenants</Important>.
+				</p>
 			</JournalEntry>
 			<JournalEntry :session=13 name="Slayer of Tendies" date="08/24/2022" party="Dilbert, Floopy, Guidos, Murica">
-				Summary
+				The gang entered and won a chicken nugget eating contest catered by <Important>Kilduff Fried Poultry</Important> before deciding to continue their quest to find the location indicated by <Important>Floopy's mask</Important>. Luckily, Murica was shockingly well read on the culture and history of the region, and suggested the party visit <Location>Altubreste</Location>. They arrived and found <Important>two rival camps</Important> set up near the entrance to the <Location>partially excavated ruins</Location>. A <Important>camp of humans</Important> wanted to use black powder to blast their way into the ruins in the hopes of finding a vault. Their rivals, a <Important>camp of gnomes</Important>, wanted to carefully excavate the ruins in the hopes of uncovering lost chapters of history. Dilbert agreed with the gnomes' view, and snapped the neck of the human leader. He spoke with the leader of the gnomish camp, and assisted them in translating some etchings reliefs inside the first few rooms of the catacombs. From these, they were able to determine that the ruins were once a holy site for the long extinct <Important>minotaur</Important> race.
 			</JournalEntry>
 			<JournalEntry :session=14 name="The Fate of the Minotaur" date="09/14/2022" party="Dilbert, Floopy, Guidos, Murica">
-				Summary
+				The gang ventured back into the <Location>ruined temple</Location> at <Location>Altubreste</Location>, encountering traps and trails after venturing beyond the first few chambers. These magical challenges seemed to be intended to test how any interlopers measured up against minotaur values. As they pushed onward, they observed carvings that chronicled various chapters of the history of the minotaur.
 			</JournalEntry>
 			<JournalEntry :session=15 name="Trials and Revelations" date="09/21/2022" party="Dilbert, Floopy, Guidos, Murica">
-				Summary
+				The gang continued to venture deeper into the <Location>temple</Location>, facing greater challenges the farther they went. A spectral piece of minotaur imagery appeared around the gang with each new trail they passed, until finally each hero bore at least spectral hooves, horns, and a tail. Finally, they reached the <Location>innermost sanctum</Location>, where they found the hastily carved chronicle of the final chapter in the story of the minotaur. It was written that <Important>draconic invaders</Important> had come from across the sea and layed siege to the temple. The carvings stopped after this point, presumably due to the temple falling to the invaders. The gang discovered a <Important>circular platform</Important> in the back of the innermost room that resembled teleportation circles.
 			</JournalEntry>
 			<JournalEntry :session=16 name="The Search Begins" date="10/05/2022" party="Dilbert, Floopy, Guidos, Murica">
 				Summary
@@ -99,12 +110,15 @@ import Character from "@/components/core/text-tags/Character.vue";
 			<JournalEntry :session=27 name="This Dirt Tastes Like Chicken" date="03/01/2023" party="Dilbert, Floopy, Guidos, Murica">
 				Summary
 			</JournalEntry>
-			<JournalEntry :session=28 name="Landfall" date="03/08/2023" party="Dilbert, Floopy, Guidos, Murica">
+			<JournalEntry :session=28 name="Eye in the North" date="03/08/2023" party="Dilbert, Floopy, Guidos, Murica">
 				Summary
 			</JournalEntry>
-			<JournalEntry :session=29 name="Landfall" date="03/15/2023" party="Dilbert, Floopy, Guidos, Murica">
+			<JournalEntry :session=29 name="The Return of the Minotaur" date="03/15/2023" party="Dilbert, Floopy, Guidos, Murica">
 				Summary
 			</JournalEntry>
+			<!-- <JournalEntry :session=30 name="Landfall" date="03/15/2023" party="Dilbert, Floopy, Guidos, Murica">
+				Summary
+			</JournalEntry> -->
 		</div>
 	</main>
 </template>

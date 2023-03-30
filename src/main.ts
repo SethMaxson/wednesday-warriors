@@ -9,6 +9,7 @@ import "./assets/main.css";
 import CharactersVue from "./components/views/characters/Characters.vue";
 import DMViewComponent from "./components/views/dm/DM.vue";
 import FactionsViewComponent from "./components/views/factions/Factions.vue";
+import GapYearViewComponent from "./components/views/gap-year/GapYear.vue";
 import InventoryViewComponent from "./components/views/inventory/Inventory.vue";
 import JournalViewComponent from "./components/views/journal/Journal.vue";
 import LinksViewComponent from "./components/views/links/Links.vue";
@@ -23,6 +24,7 @@ const router = createRouter({
 		{ path: '/characters', component: CharactersVue},
 		{ path: '/dm', component: DMViewComponent},
 		{ path: '/factions', component: FactionsViewComponent},
+		{ path: '/gap-year', component: GapYearViewComponent},
 		{ path: '/inventory', component: InventoryViewComponent},
 		{ path: '/journal', component: JournalViewComponent},
 		{ path: '/links', component: LinksViewComponent},

@@ -5,8 +5,8 @@ import CrewCards from "./subviews/CrewCards.vue";
 import EnemyCards from "./subviews/EnemyCards.vue";
 import FrenemyCards from "./subviews/FrenemyCards.vue";
 import PartyCards from "./subviews/PartyCards.vue";
-import AccordionItem from "../../core/AccordionItem.vue";
-import ViewBlurb from "../../core/ViewBlurb.vue";
+import AccordionItem from "@/components/core/AccordionItem.vue";
+import ViewBlurb from "@/components/core/ViewBlurb.vue";
 </script>
 
 <template>

@@ -22,14 +22,17 @@ defineProps<{
 					<li class="nav-item">
 						<router-link class="nav-link" to="/characters"> Characters </router-link>
 					</li>
+					<li class="nav-item">
+						<router-link class="nav-link" to="/factions"> Factions </router-link>
+					</li>
+					<li class="nav-item">
+						<router-link class="nav-link" to="/gap-year"> Gap Year </router-link>
+					</li>
 					<!-- <li class="nav-item">
 						<router-link class="nav-link" to="/inventory"> Inventory </router-link>
 					</li> -->
 					<li class="nav-item">
 						<router-link class="nav-link" to="/journal"> Journal </router-link>
-					</li>
-					<li class="nav-item">
-						<router-link class="nav-link" to="/factions"> Factions </router-link>
 					</li>
 					<li class="nav-item">
 						<router-link class="nav-link" to="/links"> External Links </router-link>

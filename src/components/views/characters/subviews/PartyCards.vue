@@ -31,7 +31,8 @@ import CharacterCardDeck from '@/components/core/CardDeck.vue';
 		</CharacterCard>
 		<CharacterCard>
 			<template #image>
-				<Portrait src="characters/party/wednesday-warriors/floopy.png" />
+				<!-- <Portrait src="characters/party/wednesday-warriors/floopy.png" /> -->
+				<Portrait src="characters/party/wednesday-warriors/floopy-frog.jpeg" />
 			</template>
 			<template #heading>Floopy Nugen</template>
 			<template #subheading>High Elf Barbarian</template>
