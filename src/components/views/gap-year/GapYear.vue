@@ -16,7 +16,7 @@ import GapMonth from "./components/GapMonth.vue";
 	</header>
 	<main>
 		<div class="accordion" id="gap-year-accordion">
-			<AccordionItem name="Plot Threads" parent-id="gap-year-accordion">
+			<AccordionItem name="Plot Threads" parent-id="gap-year-accordion" :default-open="false">
 				<div class="list-group">
 					<div class="list-group-item">
 						<div class="d-flex w-100 justify-content-between">
@@ -24,7 +24,7 @@ import GapMonth from "./components/GapMonth.vue";
 							<small>Dilbert</small>
 						</div>
 						<small>
-							Dilbert learned that a charismatic new leader is rallying the people of the wizarding nation of Venland to invade and destroy Dilbertland.
+							Dilbert learned that a charismatic new leader is rallying the people of the wizarding nation of Venland to invade and destroy Dilbertland. This leader was described as being so old and sickly that he no longer has flesh or a body.
 						</small>
 					</div>
 					<div class="list-group-item">
@@ -42,7 +42,7 @@ import GapMonth from "./components/GapMonth.vue";
 							<small>Murica</small>
 						</div>
 						<small>
-							After learning that Murica is a lycanthrope, Cade Brightcloak told her of a corrupted artifact that was once wielded by great heroes before it was corrupted by a dark moon mage. He will suggest that that as 'an aspect of the moon,' Murica may be well-suited to purify the artifact if the gang can locate it.
+							After learning that Murica is a lycanthrope, Cade Brightcloak told her of a corrupted artifact that was once wielded by great heroes before it was corrupted by a dark moon mage. He suggested that that as 'an aspect of the moon,' Murica may be well-suited to purify the artifact if the gang can locate it.
 						</small>
 					</div>
 					<div class="list-group-item">
@@ -56,7 +56,7 @@ import GapMonth from "./components/GapMonth.vue";
 					</div>
 				</div>
 			</AccordionItem>
-			<AccordionItem name="Schedule" parent-id="gap-year-accordion" :default-open="true">
+			<AccordionItem name="Schedule" parent-id="gap-year-accordion" :default-open="false">
 				<div class="container border border-2 g-0">
 					<!-- <GapMonth month="Month" location="Location" quest-haver="Primary Character" class="bg-info fw-bold d-none d-md-flex">Summary</GapMonth> -->
 					<GapMonth month="Month" location="Location" quest-haver="Primary Character" class="bg-info fw-bold">Summary</GapMonth>
