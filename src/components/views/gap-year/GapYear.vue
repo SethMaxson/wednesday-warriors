@@ -16,7 +16,7 @@ import GapMonth from "./components/GapMonth.vue";
 	</header>
 	<main>
 		<div class="accordion" id="gap-year-accordion">
-			<AccordionItem name="Plot Threads" parent-id="gap-year-accordion" :default-open="false">
+			<AccordionItem name="Plot Threads" parent-id="gap-year-accordion" :default-open="true">
 				<div class="list-group">
 					<div class="list-group-item">
 						<div class="d-flex w-100 justify-content-between">
