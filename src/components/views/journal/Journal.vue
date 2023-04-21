@@ -5,6 +5,7 @@ import JournalEntry from "./subviews/JournalEntry.vue";
 import Location from "@/components/core/text-tags/Location.vue";
 import Important from "@/components/core/text-tags/Important.vue";
 import Character from "@/components/core/text-tags/Character.vue";
+import ScrollToTopButtonVue from "@/components/core/ScrollToTopButton.vue";
 </script>
 
 <template>
@@ -14,7 +15,7 @@ import Character from "@/components/core/text-tags/Character.vue";
 		</ViewBlurb>
 	</header>
 	<main>
-		<div class="container border border-2 g-0">
+		<div class="container border border-2 g-0 pb-5 pb-lg-0">
 			<JournalLabels session="Session #" name="Name" party="Party Members" date="Date" class="bg-info fw-bold d-none d-md-flex" />
 			<JournalEntry :session=1 name="Fizzy Lifting Drink" date="04/20/2022" party="Guidos, Murica, Peppa Shortbottom">
 				A trio of adventurers were locked within the brig of an airship prisoner transport when the vessel was suddenly attacked by pirates. A stray piece of shrapnel destroyed the lock to their cell. The prisoners seized upon this opportunity, narrowly escaping by feeding an Anti Gravity Crystal to an ogrillon and using their new friend as a makeshift airship until they could make landfall.
@@ -74,7 +75,10 @@ import Character from "@/components/core/text-tags/Character.vue";
 			<JournalEntry :session=15 name="Trials and Revelations" date="09/21/2022" party="Dilbert, Floopy, Guidos, Murica">
 				The gang continued to venture deeper into the <Location>temple</Location>, facing greater challenges the farther they went. A spectral piece of minotaur imagery appeared around the gang with each new trail they passed, until finally each hero bore at least spectral hooves, horns, and a tail. Finally, they reached the <Location>innermost sanctum</Location>, where they found the hastily carved chronicle of the final chapter in the story of the minotaur. It was written that <Important>draconic invaders</Important> had come from across the sea and layed siege to the temple. The carvings stopped after this point, presumably due to the temple falling to the invaders. The gang discovered a <Important>circular platform</Important> in the back of the innermost room that resembled teleportation circles.
 			</JournalEntry>
-			<JournalEntry :session=16 name="The Search Begins" date="10/05/2022" party="Dilbert, Floopy, Guidos, Murica">
+			<JournalEntry :session=9999 name="COMING SOON" date="SOON" party="UNDER CONSTRUCTION">
+				<i>I still need to write brief, coherent summaries for sessions #16-30. I apologize for the delay!</i>
+			</JournalEntry>
+			<!-- <JournalEntry :session=16 name="The Search Begins" date="10/05/2022" party="Dilbert, Floopy, Guidos, Murica">
 				Summary
 			</JournalEntry>
 			<JournalEntry :session=17 name="Golden Hoof" date="10/19/2022" party="Dilbert, Floopy, Guidos, Murica">
@@ -107,7 +111,7 @@ import Character from "@/components/core/text-tags/Character.vue";
 			<JournalEntry :session=26 name="The Vault Part II" date="02/15/2023" party="Dilbert, Floopy, Guidos, Murica">
 				Summary
 			</JournalEntry>
-			<JournalEntry :session=27 name="This Dirt Tastes Like Chicken" date="03/01/2023" party="Dilbert, Floopy, Guidos, Murica">
+			<JournalEntry :session=27 name="The White Dragon" date="03/01/2023" party="Dilbert, Floopy, Guidos, Murica">
 				Summary
 			</JournalEntry>
 			<JournalEntry :session=28 name="Eye in the North" date="03/08/2023" party="Dilbert, Floopy, Guidos, Murica">
@@ -116,9 +120,20 @@ import Character from "@/components/core/text-tags/Character.vue";
 			<JournalEntry :session=29 name="The Return of the Minotaur" date="03/15/2023" party="Dilbert, Floopy, Guidos, Murica">
 				Summary
 			</JournalEntry>
-			<!-- <JournalEntry :session=30 name="Landfall" date="03/15/2023" party="Dilbert, Floopy, Guidos, Murica">
+			<JournalEntry :session=30 name="Homeward Dilbert" date="04/05/2023" party="Dilbert, Floopy, Guidos, Murica">
 				Summary
 			</JournalEntry> -->
+			<JournalEntry :session=31 name="Dilbertland Part I" date="04/12/2023" party="Dilbert, Floopy, Guidos, Murica">
+				The gang reached <Location>Dilbertland</Location> and set to work uniting the four disparate tribes under one banner to defend against the looming invasion from <Location>Venland</Location> to the south. The gang successfully rallied the Swamp Dilberts and the Hill Dilberts to their cause, but lost <Character>Dave Meowthews</Character> in the process.
+			</JournalEntry>
+			<!-- <JournalEntry :session=32 name="Dilbertland Part II" date="04/19/2023" party="Dilbert, Floopy, Guidos, Murica">
+				Summary
+			</JournalEntry> -->
+			<!-- <JournalEntry :session=33 name="Landfall" date="05/03/2023" party="Dilbert, Floopy, Guidos, Murica">
+				Summary
+			</JournalEntry> -->
+
+			<ScrollToTopButtonVue />
 		</div>
 	</main>
 </template>

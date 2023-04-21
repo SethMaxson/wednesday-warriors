@@ -66,6 +66,10 @@
   --location-text-color: #039422;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   color: var(--color-text);

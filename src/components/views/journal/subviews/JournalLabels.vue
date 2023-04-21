@@ -32,10 +32,10 @@ defineProps({
 		<div class="col border-end border-2 d-none d-md-block">
 			{{name}}
 		</div>
-		<div class="col border-end border-2 d-none d-md-block">
+		<div class="col border-end border-2 d-none d-lg-block">
 			{{party}}
 		</div>
-		<div class="col text d-none d-md-block">
+		<div class="col-2 text d-none d-md-block">
 			{{date}}
 		</div>
 		<div class="col border-end border-2 d-block d-md-none bg-info-subtle fw-bold position-relative">
