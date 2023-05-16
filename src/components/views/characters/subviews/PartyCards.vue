@@ -18,7 +18,7 @@ import CharacterCardDeck from '@/components/core/CardDeck.vue';
 			has uncommonly high self-doubt, which may be the only thing hampering his otherwise tactical mind.
 			<!- <template #button><a href="#" class="btn btn-primary">Go somewhere</a></template> ->
 		</Card> -->
-		<CharacterCard>
+		<CharacterCard status="dead">
 			<template #image>
 				<Portrait src="characters/party/wednesday-warriors/dilbert.png" />
 			</template>

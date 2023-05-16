@@ -18,7 +18,7 @@ import GapMonth from "./components/GapMonth.vue";
 		<div class="accordion" id="gap-year-accordion">
 			<AccordionItem name="Plot Threads" parent-id="gap-year-accordion" :default-open="true">
 				<div class="list-group">
-					<div class="list-group-item">
+					<!-- <div class="list-group-item">
 						<div class="d-flex w-100 justify-content-between">
 							<h6 class="mb-1">Impending Invasion of Dilbertland</h6>
 							<small>Dilbert</small>
@@ -26,7 +26,7 @@ import GapMonth from "./components/GapMonth.vue";
 						<small>
 							Dilbert learned that a charismatic new leader is rallying the people of the wizarding nation of Venland to invade and destroy Dilbertland. This leader was described as being so old and sickly that he no longer has flesh or a body.
 						</small>
-					</div>
+					</div> -->
 					<div class="list-group-item">
 						<div class="d-flex w-100 justify-content-between">
 							<h6 class="mb-1">The Cult and the Vengeful Lord</h6>
@@ -63,13 +63,13 @@ import GapMonth from "./components/GapMonth.vue";
 					<GapMonth month="0" location="" quest-haver="">
 						The <WikiLink>Minotaur</WikiLink> are brought back into existence. Bhazikth announces that they have one year to prepare themselves before his war.
 					</GapMonth>
-					<GapMonth month="1" location="" quest-haver="" class="bg-info-subtle">
-						
+					<GapMonth month="1" location="Dilbertland" quest-haver="Dilbert">
+						The gang sailed for Dilbertland.
 					</GapMonth>
-					<GapMonth month="2" location="" quest-haver="">
-						
+					<GapMonth month="2" location="Dilbertland" quest-haver="Dilbert">
+						The gang reached Dilbertland, where they united the four Dilbert tribes before venturing into the nation of Venland and narrowly defeating the demilich that threatened to destroy all of Dilbertkind.
 					</GapMonth>
-					<GapMonth month="3" location="" quest-haver="">
+					<GapMonth month="3" location="" quest-haver="" class="bg-info-subtle">
 						
 					</GapMonth>
 					<GapMonth month="4" location="" quest-haver="">

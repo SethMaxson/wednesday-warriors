@@ -1,9 +1,16 @@
 <script setup lang="ts">
 import Card from '@/components/core/Card.vue';
+
+defineProps({
+	status: {
+		type: String,
+		required: false
+	}
+})
 </script>
 
 <template>
-	<Card>
+	<Card :class="{'dead': status == 'dead'}">
 		<template v-slot:footer v-if="$slots.pcContact">
 			Primary <abbr title="Player Character">PC</abbr> contact: <slot name="pcContact"></slot>
 		</template>
@@ -18,3 +25,22 @@ export default {
   name: 'CharacterCard',
 }
 </script>
+
+<style>
+	.card img {
+		position: relative;
+	}
+
+	.dead img::before {
+		content: " ";
+		background-image: url("@/assets/images/dead.png");
+		background: red;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 5;
+		opacity: 5;
+	}
+</style>

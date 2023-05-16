@@ -20,5 +20,5 @@ const url = Config.BaseImageUrl + props.src;
 </script>
 
 <template>
-	<img :class="class" :alt="alt" :src="url" />
+	<img :class="props.class" :alt="alt" :src="url" />
 </template>

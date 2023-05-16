@@ -11,21 +11,21 @@ import ViewBlurb from "../../core/ViewBlurb.vue";
 	</header>
 	<main>
 		<div class="list-group">
-			<Link href="https://www.owlbear.app/room/0AfRzE9Ukr3T/TheWindyPort" class="list-group-item list-group-item-action">
+			<Link href="https://www.owlbear.app/room/0AfRzE9Ukr3T/TheWindyPort" class="list-group-item list-group-item-action" :absolute-url="true">
 				<div class="d-flex w-100 justify-content-between">
 					<h6 class="mb-1">Battle Map/VTT</h6>
 					<small>owlbear.app</small>
 				</div>
 				<small>A page that is used to host and view interactive maps for this campaign.</small>
 			</Link>
-			<Link href="https://ddb.ac/campaigns/join/2876495768886834" class="list-group-item list-group-item-action">
+			<Link href="https://ddb.ac/campaigns/join/2876495768886834" class="list-group-item list-group-item-action" :absolute-url="true">
 				<div class="d-flex w-100 justify-content-between">
 					<h6 class="mb-1">Character Creation/Management</h6>
 					<small>dndbeyond.com</small>
 				</div>
 				<small>A page on DND Beyond that allows for characters in this campaign to be created or edited.</small>
 			</Link>
-			<Link href="https://sethmaxson.github.io/dnd/tiddlywiki/public.html" class="list-group-item list-group-item-action">
+			<Link href="https://sethmaxson.github.io/dnd/tiddlywiki/public.html" class="list-group-item list-group-item-action" :absolute-url="true">
 				<div class="d-flex w-100 justify-content-between">
 					<h6 class="mb-1">Wiki</h6>
 					<small>sethmaxson.github.io</small>
