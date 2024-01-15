@@ -42,14 +42,5 @@ import Portrait from '@/components/core/Portrait.vue';
 
 			<b>Gary Gardener</b> is a pudgy balding but nice middle-aged man who chose to pursue his dream of piracy a little later in life.
 		</CharacterCard>
-		<CharacterCard>
-			<template #image>
-				<Portrait src="characters/npc/wednesday-warriors/dave-meowthews.png" />
-			</template>
-			<template #heading>Dave Meowthews</template>
-			<template #subheading>Tabaxi Farmer</template>
-
-			<b>Leaf in the Cyclone</b>, also known as <b>Dave Meowthews</b>, is a middle-aged tabaxi who dreams of one day becoming a sky-pirate captain.
-		</CharacterCard>
 	</CharacterCardDeck>
 </template>
